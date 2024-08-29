@@ -1,0 +1,179 @@
+
+/*header*/
+
+body
+{
+    font-weight: "system-ui";
+}
+
+
+header 
+{
+    position: fixed;
+    left:0 ;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: scroll;
+    padding: 0 15px;
+    transition: all ease-in-out 0.3s;
+    z-index: 997;
+    width: 270px;
+}
+header div.profile img
+{
+    width: 200px;
+    height: 200px;
+}
+main
+{
+    margin-left: 270px;
+}
+/*home*/
+section#home 
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0% 50% , rgba(0, 0, 0, 0.7) 50% 100%) ,url(../images/WhatsApp\ Image\ 2024-08-29\ at\ 10.01.40\ AM.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+   
+    
+       
+ }
+ section#home div.pref h1
+ {
+    font-size: 60px;
+ }
+ section#home div.pref
+ {
+   position: absolute;
+   top: 30%;
+   left:50%;
+ }
+
+ div.title h1
+{
+    position: relative;
+}
+div.title h1::before
+{
+    content: '';
+position: absolute;
+width: 20%;
+height: 5px;
+bottom:-20px;
+left: 40%;
+background-color: #4495ec;
+}
+
+.carousel
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712) 0% 50% , rgba(0, 0, 0, 0.712) 50% 100%), url(../images/new\ giza\ \(2\).jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 60vh;
+
+}
+
+
+/*experience*/
+section#experience div.carousel-indicators button
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+
+/*projects*/
+.nav-pills .nav-link, .nav-pills .show>.nav-link
+{
+ color: black !important;
+ background-color: white !important;
+ font-weight: 800;
+}
+div.row div.layer i
+{
+ transition: all 1s;
+}
+div.row div.layer i:hover
+{
+color: black !important;
+background-color: white !important;
+}
+div.row div.image
+{
+ position: relative;
+}
+
+div.row div.layer
+{
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ background-color: rgba(255, 255, 255, 0.85);
+ opacity: 0;
+ transition: all 1s;
+
+
+}
+div.row div.image:hover div.layer
+{
+ 
+ opacity: 1;
+}
+
+ul.nav li button
+{
+ position: relative;
+}
+ul.nav li button::after
+{
+ content:'' ;
+ width: 0%;
+ height: 3px;
+ position: absolute;
+ bottom: 0;
+ left: 10%;
+ background-color: black;
+ transition:width 0.5s ;
+
+}
+
+
+ul.nav li button.active::after
+{
+ width: 80%;
+}
+
+/*education*/
+ section#education div.container
+ {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712) 0% 50% , rgba(0, 0, 0, 0.712) 50% 100%), url(../images/faculty.webp);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 70vh;
+ }
+
+
+
+ @media screen and (max-width: 768px) {
+    header { 
+   display: none;
+    }
+    main 
+    {
+        margin-left: -270px;
+        margin: auto;
+    }
+    div.pref 
+    {
+      margin-left:-30%;
+      
+    }
+   }
